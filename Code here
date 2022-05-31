@@ -1,0 +1,23 @@
+#Create virtual environment in python
+#Start virtual environment
+env\Scripts\activate
+#Install selenium
+pip install selenium
+#Create file called "webscraper.py"
+echo. >webscraper.py
+#Open up file you just created
+webscraper.py
+#Open webscraper
+vim web
+
+#Within webscraper.py + (~) - VIM
+from selenium import webdriver
+
+url ='https://bscscan.com/token/0xf3bebb4f2d348e44cc4547cba2f96c214fe5a25a'
+browser = webdriver.Chrome()
+browser.get(url)
+#install correct version of chrome driver
+#drag and drop installed file into file where you will be working, C should work fine
+#Find xpath and copy here
+browser.find_element_by_xpath('//*[@id="ContentPlaceHolder1_tr_tokenHolders"]').click
+print(browswe.fint_element_by_name)
